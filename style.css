@@ -1,0 +1,154 @@
+
+
+	/* CSS Style Sheet for Personal Website
+		
+		Matthew Bicknell
+		
+							*/
+							
+							
+							
+	body, html {
+		height : 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.8em;
+		color: #666;
+		margin: 0;
+
+	}
+	
+	.pimg1, .pimg2, .pimg3, .pimg4 {
+		position: relative;
+		opacity: 0.70;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		/*
+			fixed = parallax
+			scroll = normal
+		*/
+		background-attachment: fixed;
+	}	
+
+	.pimg1 {
+		background-image:url('space.jpg');
+		min-height: 100%;
+	}
+
+	.pimg2 {
+		background-image:url('weights.jpg');
+		min-height: 400px;
+	}
+
+	.pimg3{
+		background-image:url('code.jpg');
+		min-height: 400px;
+	}
+	
+	.pimg4{
+		background-image:url('nightcity.jpg');
+		min-height: 400px;
+	}
+	
+	.ptext {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		color: #000;
+		font-size: 27px;
+		letter-spacing: 8px;
+		text-transform: uppercase;
+	}
+
+	.ptext .border {
+		background-color: #111;
+		color: #fff;
+		padding: 20px;
+	}
+
+	.ptext .border.trans {
+		background-color: transparent;
+	}	
+	
+	@media(max-width: 568px) {
+		.pimg1, .pimg2, .pimg3 {
+			background-attachment: scroll;
+		}
+	}
+	
+	.section{
+		text-align: center;
+		padding: 50px 80px;
+	}
+
+	.section-light{
+		background-color: #f4f4f4;
+		color: #666;
+	}
+
+	.section-dark {
+		background-color: #282e34;
+		color: #ddd;
+	}
+	
+	.section-dark p {
+		color: #fff;
+	}
+	
+	li a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.media {
+		position: relative;
+		top: -40px;
+		padding-right: 50px; 
+		padding-bottom: 20px;
+	}
+	
+	li {
+		list-style: none;
+		margin: 10px 30px;
+		position: relative;
+		display: inline-block;
+		font-size: 20px;
+		padding: 20px 20px;
+		color: #ffff;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		transition: .5s;
+	}
+
+	li:hover {
+		color: #292929;
+		border: 1px solid #292929;
+		transition: .5s;
+	}
+	
+	h1 {
+		font-weight: lighter;
+		font-size: 80px;
+		color: #282e34;
+		text-align: center;
+		padding-top: 50px;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+	
+	p {
+		color: #282e34;
+		text-align: left;
+		font-family: sans-serif;
+		font-weight: lighter;
+		font-size: 27px;
+		margin-top: 0;
+	}
+	
